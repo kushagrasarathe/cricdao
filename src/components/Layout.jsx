@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../../styles/Layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo1.svg";
 import discord from "../assets/discord.svg";
 
 export default function Layout({ children }) {
@@ -16,11 +16,18 @@ export default function Layout({ children }) {
     <>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <Link href="/">
-            <a className={logo}>
+          <span className={styles.logo}>
+          
+          <Link href={'/'}>
+          CricDAO
+          </Link>
+
+          {/* <Link href="/">
+            <a>
               <Image src={logo} />
             </a>
-          </Link>
+          </Link> */}
+          </span>
           <ul
             className={
               isActive === false
@@ -49,7 +56,7 @@ export default function Layout({ children }) {
               </Link>
             </li>
           </ul>
-          <button className={styles.connect}>Connect Wallet</button>
+          <button className={styles.connect}>Connect</button>
 
           <button
             onClick={handleClick}
