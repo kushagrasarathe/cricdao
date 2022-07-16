@@ -85,7 +85,7 @@ export default function Home() {
               their contribution
             </li>
           </ul>
-          <button className={styles.whitelist_btn}>Mint NFT</button>
+          {/* <button className={styles.whitelist_btn}>Mint NFT</button> */}
         </div>
         <div className={styles.roadmap}>
           <Image className={styles.roadmap} src={roadmap} />

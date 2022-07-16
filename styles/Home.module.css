@@ -32,8 +32,10 @@
 }
 
 .content {
-  max-width: 600px;
-  margin: 0 20px;
+  max-width: 1200px;
+  /* margin: 0 20px; */
+  margin-right: 80px;
+  margin-left: 80px;
   padding: 20px 10px;
   max-height: inherit;
   text-align: center;
@@ -169,11 +171,21 @@
   transition: transform 0.5s;
 }
 
+/* account page */
+.pfp {
+  max-width: 250px;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .main {
     flex-direction: column-reverse;
   }
   .nft_section {
     flex-direction: column-reverse;
+  }
+  .content {
+    margin: 0 auto;
   }
 }
