@@ -1,0 +1,91 @@
+import React, { useState } from "react";
+import styles from "../../styles/Layout.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../assets/logo.svg";
+import discord from "../assets/discord.svg";
+
+export default function Layout({ children }) {
+  const [isActive, setIsActive] = useState(false);
+
+  function handleClick() {
+    setIsActive(!isActive);
+  }
+
+  return (
+    <>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <Link href="/">
+            <a className={logo}>
+              <Image src={logo} />
+            </a>
+          </Link>
+          <ul
+            className={
+              isActive === false
+                ? styles.navmenu
+                : styles.navmenu + " " + styles.active
+            }
+          >
+            <li className={styles.navitem}>
+              <Link href="/">
+                <a className={styles.navlink}>Home</a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="/battle">
+                <a className={styles.navlink}>Battle</a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="">
+                <a className={styles.navlink}>Players</a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="">
+                <a className={styles.navlink}>Chatroom</a>
+              </Link>
+            </li>
+          </ul>
+          <button className={styles.connect}>Connect Wallet</button>
+
+          <button
+            onClick={handleClick}
+            className={
+              isActive === false
+                ? styles.hamburger
+                : styles.hamburger + " " + styles.active
+            }
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </button>
+        </nav>
+      </header>
+
+      {children}
+
+      <div className={styles.container}>
+        <footer className={styles.footer}>
+          Built by{" "}
+          <a
+            target="_blank"
+            href="https://twitter.com/0xdhruva"
+            rel="noopener noreferrer"
+          >Dhruv</a> 
+          <span>&</span>
+          <a
+            target="_blank"
+            href="https://twitter.com/kushagrasarathe"
+            rel="noopener noreferrer"
+          >Kushagra</a>&#9749;
+        
+          
+        </footer>
+      </div>
+    </>
+  );
+}
