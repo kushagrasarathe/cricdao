@@ -46,7 +46,7 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li className={styles.navitem}>
-              <Link href="">
+              <Link href="/players">
                 <a className={styles.navlink}>Players</a>
               </Link>
             </li>
