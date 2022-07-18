@@ -12,8 +12,14 @@ export default function players() {
           <PlayerCard />
           <PlayerCard />
           <PlayerCard />
+          {/* <PlayerCard />
           <PlayerCard />
           <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard /> */}
         </div>
       </main>
     </div>
