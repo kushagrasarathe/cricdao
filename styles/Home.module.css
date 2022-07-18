@@ -156,6 +156,7 @@
 .roadmap_section {
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* justify-content: space-around; */
   align-items: center;
@@ -167,7 +168,7 @@
 }
 
 .roadmap {
-  max-width: 300px;
+  /* max-width: 300px; */
   transition: transform 0.5s;
 }
 

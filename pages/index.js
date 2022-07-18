@@ -72,8 +72,8 @@ export default function Home() {
 
       <div className={styles.roadmap_section}>
         <div className={styles.content}>
-          <h1>Roadmap</h1>
-          <ul>
+          {/* <h1>Roadmap</h1> */}
+          {/* <ul>
             <li>Whitelisting</li>
             <li>DAO NFT launch</li>
             <li>Match prediction</li>
@@ -84,7 +84,7 @@ export default function Home() {
               Get players Onboard to the platform, they can be rewarded for
               their contribution
             </li>
-          </ul>
+          </ul> */}
           {/* <button className={styles.whitelist_btn}>Mint NFT</button> */}
         </div>
         <div className={styles.roadmap}>
