@@ -14,21 +14,35 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.hero_section}>
         <div className={styles.hero_content}>
-          <h1>CricDAO</h1>
-          <div className={styles.hero_image}>
-            <Image src={hero} />
-          </div>
+          <h1>CricDAO is a one-stop platform for cricket lovers</h1>
           <p>
-            CricDAO lets you collect your favourite cricket players as NFT cards
-            and participate in battles where you can predict match results and
-            win rewards.
+            You can trade player NFTs in the marketplace and participate in
+            battles where you can predict macth result and win rewards.
           </p>
-          <div className={styles.redirect_section}>
-            <button className={styles.redirect_button}>Join Whitelist</button>
-            <button className={styles.redirect_button}>Battles</button>
-            <button className={styles.redirect_button}>Player NFTs</button>
-          </div>
+          <button className={styles.redirect_button}>Marketplace</button>
         </div>
+        <div className={styles.hero_image}>
+          <Image src={hero} />
+        </div>
+      </div>
+
+      <div className={styles.features_section}>
+        <div>
+          <h1>Key Features</h1>
+
+          <li>Community for Cricket Lovers</li>
+          <li>CricDAO is a DAO & NFT based gaming platform</li>
+          <li>You can become DAO member by purchasing a DAO NFT.</li>
+          <li>You can buy Player NFTs , trade and play games with them.</li>
+          <li>You can also predict match result and win rewards</li>
+        
+        </div>
+        <button className={styles.redirect_button}>Join CricDAO</button>
+      </div>
+
+      <div className={styles.redirect_section}>
+        <button className={styles.redirect_button}>Battles</button>
+        <button className={styles.redirect_button}>Join Whitelist</button>
       </div>
 
       <main className={styles.main}>
@@ -50,17 +64,6 @@ export default function Home() {
 
       <div className={styles.whitelist}>
         <div className={styles.content}>
-          <h1>Community for Cricket Lovers 🏏</h1>
-          <p>
-            CricDAO is a DAO & NFT based gaming platform for cricket lovers. You
-            can become DAO member by purchasing a DAO NFT.
-          </p>
-          <p>You can buy Player NFTs , trade and play games with them.</p>
-          <p>
-            Wait! there is more , you can also predict match result and win
-            rewards , How cool is that ?
-          </p>
-
           <button className={styles.whitelist_btn}>Join Whitelist</button>
         </div>
         <div className={styles.stumps}>

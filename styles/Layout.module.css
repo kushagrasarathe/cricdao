@@ -1,6 +1,6 @@
 .header {
   /* border-bottom: 1px solid #e2e8f0; */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .navbar {
@@ -16,16 +16,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   background-color: white;
+  background-color: #29c6ff;
+  background: linear-gradient(#b3ffeb, #8aecff);
+  background: linear-gradient(#00bbff, #63e5ff);
+
   /* background-color: #417cd5; */
   /* color: white; */
 
-  /* max-height: 8vh; */
+  max-height: 8vh;
   /* border: 2px solid red; */
 }
 
 .logo {
+  font-size: 35px;
+  font-weight: 500;
   /* font-size: 40px;
   font-weight: 900;
   cursor: pointer;
@@ -59,7 +65,8 @@
 }
 
 .navlink {
-  /* font-size: 18px;
+  font-size: 18px;
+  /* 
   font-weight: 400;
   color: #bcb8e1;
   color: #1fbcff;
@@ -69,21 +76,19 @@
 .navlink:hover {
   /* color: #a6a0da;
   color: #0a92fa; */
-
 }
-
 
 .connect {
 }
 
 .hamburger {
-  background-color: #231942;
+  background-color: #000000;
   display: none;
   color: #dddbf1;
   border-radius: 5px;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
-    5px 5px 0px 0px;
+  /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px; */
   position: relative;
   user-select: none;
   -webkit-user-select: none;
@@ -91,9 +96,9 @@
 }
 
 .hamburger:active {
-  box-shadow: 0px 0px 0px 0px;
+  /* box-shadow: 0px 0px 0px 0px;
   top: 5px;
-  left: 5px;
+  left: 5px; */
 }
 
 .bar {
@@ -134,17 +139,18 @@
     z-index: 100;
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 3rem;
     flex-direction: column;
     background-color: white;
     width: 100%;
-    text-align: center;
+    background: linear-gradient(#63e5ff, #00bbff);
+    justify-content: center;
     transition: 0.3s;
   }
 
-  /* .hamburger {
+  .hamburger {
     padding: 0.25em 0.75em;
-  } */
+  }
 
   .navmenu.active {
     left: 0;
