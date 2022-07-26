@@ -17,16 +17,7 @@ export default function Layout({ children }) {
       <header className={styles.header}>
         <nav className={styles.navbar}>
           <span className={styles.logo}>
-          
-          <Link href={'/'}>
-          CricDAO
-          </Link>
-
-          {/* <Link href="/">
-            <a>
-              <Image src={logo} />
-            </a>
-          </Link> */}
+            <Link href={"/"}>CricDAO</Link>
           </span>
           <ul
             className={
@@ -55,8 +46,10 @@ export default function Layout({ children }) {
                 <a className={styles.navlink}>Chatroom</a>
               </Link>
             </li>
+            <li className={styles.navitem}>
+              <button className={styles.connect}>Connect</button>
+            </li>
           </ul>
-          <button className={styles.connect}>Connect</button>
 
           <button
             onClick={handleClick}
@@ -82,15 +75,18 @@ export default function Layout({ children }) {
             target="_blank"
             href="https://twitter.com/0xdhruva"
             rel="noopener noreferrer"
-          >Dhruv</a> 
+          >
+            Dhruv
+          </a>
           <span>&</span>
           <a
             target="_blank"
             href="https://twitter.com/kushagrasarathe"
             rel="noopener noreferrer"
-          >Kushagra</a>&#9749;
-        
-          
+          >
+            Kushagra
+          </a>
+          &#9749;
         </footer>
       </div>
     </>

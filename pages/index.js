@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import hero from "../src/assets/hero.svg";
+// import hero from "../src/assets/hero1.png";
+import hero from "../src/assets/virat.png";
 import nft from "../src/assets/cricDAO.gif";
 import roadmap from "../src/assets/roadmap.svg";
 import image from "../src/assets/cric.webp";
@@ -11,9 +12,27 @@ import logo from "../src/assets/logo.svg";
 export default function Home() {
   return (
     <div className={styles.container}>
+      <div className={styles.hero_section}>
+        <div className={styles.hero_content}>
+          <h1>CricDAO</h1>
+          <div className={styles.hero_image}>
+            <Image src={hero} />
+          </div>
+          <p>
+            CricDAO lets you collect your favourite cricket players as NFT cards
+            and participate in battles where you can predict match results and
+            win rewards.
+          </p>
+          <div className={styles.redirect_section}>
+            <button className={styles.redirect_button}>Join Whitelist</button>
+            <button className={styles.redirect_button}>Battles</button>
+            <button className={styles.redirect_button}>Player NFTs</button>
+          </div>
+        </div>
+      </div>
+
       <main className={styles.main}>
         {/* <div className={styles.hero}> */}
-        <Image src={hero} />
         {/* </div> */}
         <div className={styles.content}>
           <h1>Welcome to CricDAO</h1>
