@@ -112,7 +112,7 @@
 }
 
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .footer {
@@ -120,15 +120,68 @@
   flex: 1;
   font-size: 20px;
   padding: 1.5rem 0;
-  border-top: 1px solid #07090c;
+  border-top: 1px solid #e1e1e1;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#00bbff, #63e5ff);
+  margin: 0;
+  background: #181616;
+  color: white;
+
 }
 
 .footer a {
   margin: 8px;
   text-decoration: underline;
 }
+
+.connect {
+  /* appearance: button; */
+  background-color: #29c6ff;
+  /* background-image: none; */
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  margin: 10px auto;
+  /* margin-top: 40px ; */
+  /* width: 100px; */
+  padding: 2px 10px;
+  background: linear-gradient(#00bbff, #63e5ff);
+  background: #68b3f5;
+
+  font-size: 18px;
+}
+
+.connect:focus {
+  text-decoration: none;
+}
+
+.connect:hover {
+  text-decoration: none;
+}
+
+.connect:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.connect:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
 
 @media only screen and (max-width: 768px) {
   /* .connect {
